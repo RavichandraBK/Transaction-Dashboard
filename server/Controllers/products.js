@@ -237,7 +237,7 @@ exports.pieChartData = async (req, res, next) => {
 exports.combinedData = async (req, res, next) => {
   try {
     const { month } = req.body;
-    const url = "http://localhost:4000/api/products";
+    const url = "https://transaction-dashboard-tmi7.onrender.com/api/products";
 
     const [statsResponse, barChartDataResponse, pieChartDataResponse] =
       await Promise.all([
